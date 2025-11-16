@@ -1,0 +1,1 @@
+print("Chungbuk Olympiad in Informatics")

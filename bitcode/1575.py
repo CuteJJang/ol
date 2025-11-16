@@ -1,0 +1,7 @@
+y1,x1 = list(map(int,input().split())) 
+y2,x2 = list(map(int,input().split()))
+y = abs(y1-y2)
+x = abs(x1-x2)
+a = min(x,y)
+b = max(x,y)
+print(b)

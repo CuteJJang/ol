@@ -1,0 +1,1 @@
+print("GoodBye KOI~ Hello COI!")
