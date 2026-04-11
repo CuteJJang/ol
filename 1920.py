@@ -1,29 +1,67 @@
-n = int(input())
-l = list(map(int,input().split()))
-l.sort()
+# n = int(input())
+# l = list(map(int,input().split()))
+# l.sort()
 
+# m = int(input())
+
+# l2 = list(map(int,input().split()))
+
+# for i in l2:
+#     s = 0
+#     e = n-1
+#     ans = 0
+
+#     while True:
+#         if s>e:
+#             break
+#         mid = (s+e)//2
+
+#         if l[mid] == i:
+#             ans = 1
+#             break
+#         elif l[mid] > i:
+#             e = mid-1
+#         else:
+#             s = mid+1
+#     print(ans)
+
+
+
+
+
+
+
+
+# # from collections import defaultdict
+
+
+# # n = int(input())
+# # a = list(map(int,input().split()))
+# # m = int(input())
+# # l = list(map(int,input().split()))
+# # d = defaultdict(int)
+# # for i in a:
+# #     d[i]+=1
+# # for i in l:
+# #     if d[i] == 1:
+# #         print(d[i])
+# #     else:
+# #         print(0)
+        
+a = set()
+n = int(input())
+s = list(map(int,input().split()))
+
+for i in s:
+    a.add(i)
 m = int(input())
 
-l2 = list(map(int,input().split()))
-
-for i in l2:
-    s = 0
-    e = n-1
-    ans = 0
-
-    while True:
-        if s>e:
-            break
-        mid = (s+e)//2
-
-        if l[mid] == i:
-            ans = 1
-            break
-        elif l[mid] > i:
-            e = mid-1
-        else:
-            s = mid+1
-    print(ans)
+ss = list(map(int,input().split()))
+for i in ss:
+    if i in a:
+        print(1)
+    else:
+        print(0)
 
 
 
@@ -32,19 +70,9 @@ for i in l2:
 
 
 
-# from collections import defaultdict
 
 
-# n = int(input())
-# a = list(map(int,input().split()))
-# m = int(input())
-# l = list(map(int,input().split()))
-# d = defaultdict(int)
-# for i in a:
-#     d[i]+=1
-# for i in l:
-#     if d[i] == 1:
-#         print(d[i])
-#     else:
-#         print(0)
-        
+
+
+
+
