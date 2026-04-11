@@ -1,6 +1,14 @@
-a = int(input("첫 번째 정수:"))
-b = int(input("두 번째 정수:"))
-# print("덧셈 결과는 ",a+b,"입니다.",sep="")
-# print(f"뺄셈 결과는 {a-b}입니다.")
-print(f"나눗셈 결과의 나머지는 {a%b}입니다.")
-print(f"나눗셈 결과의 몫은 {a//b}입니다.")
+# a = int(input("첫 번째 정수:"))
+# b = int(input("두 번째 정수:"))
+# # print("덧셈 결과는 ",a+b,"입니다.",sep="")
+# # print(f"뺄셈 결과는 {a-b}입니다.")
+# print(f"나눗셈 결과의 나머지는 {a%b}입니다.")
+# print(f"나눗셈 결과의 몫은 {a//b}입니다.")
+
+a = int(input())
+for i in range(a):
+    i = i + 1
+    if i % 2 == 0:
+        print("even")
+    else:
+        print(i)
