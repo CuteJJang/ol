@@ -48,30 +48,51 @@
 # #     else:
 # #         print(0)
         
-a = set()
-n = int(input())
-s = list(map(int,input().split()))
 
-for i in s:
-    a.add(i)
+# for i in s:
+#     a.add(i)
+# m = int(input())
+
+# ss = list(map(int,input().split()))
+# for i in ss:
+#     if i in a:
+#         print(1)
+#     else:
+#         print(0)
+
+
+
+
+n = int(input())
+l = list(map(int,input().split()))
+l.sort()
+
+def solve(t):
+
+
+    s = 0
+    e = n-1
+    ans = 0
+    while s <= e:
+
+        mid = (s+e)//2
+
+        if l[mid] == t:
+            ans = 1
+            break
+
+        elif l[mid] > t:
+            e = mid-1
+
+        else:
+            s = mid+1
+    print(ans)
+
 m = int(input())
 
-ss = list(map(int,input().split()))
-for i in ss:
-    if i in a:
-        print(1)
-    else:
-        print(0)
-
-
-
-
-
-
-
-
-
-
+ml = list(map(int,input().split()))
+for i in ml:
+    solve(i)
 
 
 
